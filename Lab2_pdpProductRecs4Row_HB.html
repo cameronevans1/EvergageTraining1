@@ -1,0 +1,21 @@
+<div id="evg-recs-container">
+    <div id="evg-recs-title">
+        {{header}}
+    </div>
+    {{#each items}}
+    <div class="evg-item">
+        <a href="{{attributes.url.value}}">
+            <img src="{{attributes.imageUrl.value}}" alt="{{attributes.name.value}}"/>
+        </a>
+            <div>
+                <span><a href="{{attributes.url.value}}">{{attributes.name.value}}</a></span>
+            </div>
+        <div style="">
+            ${{attributes.price.value}}
+        </div>
+    </div>
+    {{/each}}
+    {{#unless items}}
+    <div style="height: 200px; text-align: center; font-style: italic">***Recs will display here***</div>
+    {{/unless}}
+</div>
