@@ -1,6 +1,3 @@
-
-
-
 Config.pageTypes.push({
 
 	name:"Homepage",
